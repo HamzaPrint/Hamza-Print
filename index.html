@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Print | الرئيسية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #4f46e5; --dark: #0f172a; --light: #f8fafc; --gray: #64748b; --border: #e2e8f0; }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif; }
+        body { background-color: var(--light); color: var(--dark); }
+        header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 15px 20px; }
+        .navbar { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--dark); }
+        .admin-link { color: var(--gray); text-decoration: none; font-size: 14px; font-weight: 600; }
+        
+        .hero { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #f5f3ff 0%, #edd8ff 100%); }
+        .hero h1 { font-size: 36px; margin-bottom: 10px; }
+        .hero p { color: var(--gray); font-size: 18px; }
+
+        .section-title { text-align: center; margin: 50px 0 30px; font-size: 28px; }
+        
+        /* Categories Grid */
+        .categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto 60px; padding: 0 20px; }
+        .category-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.02); border: 1px solid var(--border); text-decoration: none; color: inherit; transition: transform 0.3s; }
+        .category-card:hover { transform: translateY(-5px); }
+        .category-img { width: 100%; height: 250px; object-fit: cover; }
+        .category-info { padding: 20px; text-align: center; }
+        .category-info h3 { font-size: 22px; margin-bottom: 5px; color: var(--dark); }
+        .category-info p { color: var(--gray); font-size: 14px; }
+
+        footer { background: var(--dark); color: #fff; text-align: center; padding: 30px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-print"></i> Hamza <span>Print</span></a>
+            <a href="admin.html" class="admin-link"><i class="fa-solid fa-lock"></i> لوحة التحكم</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>مرحباً بكم في Hamza Print</h1>
+        <p>جودة عالية في الطباعة على الملابس واختيار ذكي للألوان والمقاسات</p>
+    </section>
+
+    <h2 class="section-title">اختر الصنف لتصفح المنتجات</h2>
+
+    <main class="categories-grid">
+        <!-- قسم التيشرتات -->
+        <a href="products.html?cat=tshirt" class="category-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="تيشرتات" class="category-img">
+            <div class="category-info">
+                <h3>تيشرتات / T-Shirts</h3>
+                <p>تصفح تشكيلتنا من التيشرتات الصيفية العصرية</p>
+            </div>
+        </a>
+
+        <!-- قسم الهوديز -->
+        <a href="products.html?cat=hoodie" class="category-card">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500" alt="هوديز" class="category-img">
+            <div class="category-info">
+                <h3>هوديز / Hoodies</h3>
+                <p>ملابس شتوية دافئة بأعلى جودة طباعة</p>
+            </div>
+        </a>
+
+        <!-- قسم السويت شيرت -->
+        <a href="products.html?cat=sweatshirt" class="category-card">
+            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500" alt="سويت شيرت" class="category-img">
+            <div class="category-info">
+                <h3>سويت شيرت / Sweatshirts</h3>
+                <p>تشكيلة مريحة ومناسبة لجميع الأوقات</p>
+            </div>
+        </a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Hamza Print. جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+</html>
